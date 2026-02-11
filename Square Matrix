@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class dam
+{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int val=sc.nextInt();
+        if(val!=0&&val!=1){
+            System.out.println("Invalid input");
+        }
+        else{
+            for(int i=0;i<n;i++)
+            {
+                for(int j=0;j<m;j++){
+                    System.out.print(val+" ");
+                }
+                System.out.println();
+            }
+        }
+        sc.close();
+    }
+
+}
+
